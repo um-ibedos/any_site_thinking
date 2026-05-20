@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤔</title>
+    <style>
+        :root {
+            height: 500px;
+            width: 500px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        table {
+            margin-inline: auto;
+            border-collapse: collapse;
+
+            * {
+                border: 1px solid;
+            }
+
+            th {
+                width: 20px;
+            }
+
+            th:first-child {
+                width: 400px;
+            }
+        }
+
+
+        input {
+            width: 100%;
+            border-color: gray;
+
+            &.invalid {
+                outline-color: red;
+            }
+        }
+
+        button {
+            cursor: pointer;
+
+            &:active {
+                filter: brightness(.9);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>White List</p>
+    <table>
+        <thead>
+            <tr>
+                <th>URLPattern</th>
+                <th></th>
+                <th><button>+</button></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="🤔.js" type="module"></script>
+</body>
+
+</html>

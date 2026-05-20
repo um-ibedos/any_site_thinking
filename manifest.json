@@ -1,0 +1,33 @@
+{
+    "name": "🤔",
+    "version": "1",
+    "version_name": "🤔",
+    "manifest_version": 3,
+    "description": "🤔",
+    "permissions": [
+        "tabs",
+        "storage",
+        "unlimitedStorage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "icons": {
+        "200": "🤔.png"
+    },
+    "action": {
+        "default_popup": "🤔/🤔.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_start",
+            "all_frames": true,
+            "js": [
+                "🤔.js"
+            ]
+        }
+    ]
+}
