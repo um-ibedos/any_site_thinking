@@ -1,7 +1,8 @@
 (async _ => {
     const matches = (await chrome.storage.local.get('matches')).matches;
-    if (!matches) return;
-    if (matches.some(e => new URLPattern(e).test(location.href))) return;
+    if (matches) {
+        if (matches.some(e => new URLPattern(e).test(location.href))) return;
+    }
     const F = _ => {
         const nodesSnapshot = document.evaluate(
             '//*[not(self::style or self::script)]/text()',
